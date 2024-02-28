@@ -1,0 +1,36 @@
+---
+import HeaderLink from './HeaderLink.astro';
+---
+
+<header>
+	<nav>
+    <div>
+      <h1>
+        oandrezito
+      </h1>
+    </div>
+		<div class="internal-links">
+			<HeaderLink href="/">Home</HeaderLink>
+			<HeaderLink href="/">Blog</HeaderLink>
+			<HeaderLink href="/">About</HeaderLink>
+		</div>
+	</nav>
+</header>
+
+
+<style>
+ nav {
+  color: white;
+  display: block;
+}
+
+.internal-links {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: -40px;
+  gap: 2rem;
+}
+
+</style>

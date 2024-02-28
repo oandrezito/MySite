@@ -1,9 +1,12 @@
 ---
+import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Footer from '../components/Footer.astro'
 ---
 
 <Layout title="oandrezito">
+	<Header />
 	<main>
 		<div class="container">
 			<h1 >Andre Fernando</h1>
@@ -21,6 +24,7 @@ import Card from '../components/Card.astro';
 			/>
 		</ul>
 	</main>
+	<Footer />
 </Layout>
 
 <style>
