@@ -1,36 +1,49 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 ---
-
-<header>
-	<nav>
+<header style="padding: 10px 20px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);padding: 5px;">
+  <nav>
     <div>
-      <h1>
-        oandrezito
-      </h1>
+      <h1 style="margin: 0; color: white;">
+        <HeaderLink href="/">oandrezito</HeaderLink></h1>
     </div>
-		<div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/">Blog</HeaderLink>
-			<HeaderLink href="/">About</HeaderLink>
-		</div>
-	</nav>
+    <div class="internal-links">
+      <HeaderLink href="/about">About</HeaderLink>
+      <HeaderLink href="/blog">Blog</HeaderLink>
+      <HeaderLink href="/projects">Projects</HeaderLink>
+      <HeaderLink href="/uses">Uses</HeaderLink>
+    </div>
+  </nav>
 </header>
 
-
 <style>
- nav {
-  color: white;
-  display: block;
-}
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+  }
 
-.internal-links {
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-top: -40px;
-  gap: 2rem;
-}
+  .internal-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0; 
+    justify-content: center;
+  
+  }
 
+  .internal-links h1,a {
+    color: white;
+    font-size: 14px; 
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s ease; 
+    justify-content:center;
+  }
+
+  .internal-links h1,a:hover {
+    color: #389c24;
+  }
 </style>
